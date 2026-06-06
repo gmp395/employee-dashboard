@@ -180,11 +180,9 @@ fix: improve employee loading error handling
 
 ## Despliegue
 
-La aplicación está preparada para ser desplegada mediante GitHub Pages.
+La aplicación está desplegada en GitHub Pages.
 
-**Enlace al despliegue:**
-
-Pendiente de añadir.
+[Ver aplicación](https://gmp395.github.io/employee-dashboard/src/)
 
 ## Autora
 
