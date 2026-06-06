@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Panel de Administración de Empleados</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard de empleados</h1>
+      <button type="button" id="logout-button">Cerrar sesión</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>Listado de empleados</h2>
+        <p>Consulta los datos básicos de contacto y dirección del equipo.</p>
+      </section>
+
+      <section>
+        <h2>Filtrar por inicial</h2>
+        <div id="letter-filter"></div>
+      </section>
+
+      <section>
+        <h2>Empleados</h2>
+        <div id="employees-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Panel de Administración de Empleados</p>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
