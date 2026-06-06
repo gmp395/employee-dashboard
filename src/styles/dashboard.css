@@ -1,0 +1,83 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logout-button {
+  background: #dc2626;
+}
+
+#logout-button:hover {
+  background: #b91c1c;
+}
+
+#letter-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#letter-filter button {
+  background: #e5e7eb;
+  color: #111827;
+  padding: 0.6rem 0.8rem;
+}
+
+#letter-filter button:hover,
+#letter-filter button.active {
+  background: #2563eb;
+  color: white;
+}
+
+#employees-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.employee-card {
+  padding: 1rem;
+  max-width: 250px;
+}
+
+.employee-card img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.employee-card h3 {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.employee-card p {
+  margin: 0.3rem 0;
+  color: #4b5563;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #logout-button {
+    width: 100%;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  #employees-list {
+    grid-template-columns: 1fr;
+  }
+}
