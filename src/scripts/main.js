@@ -17,12 +17,10 @@ logoutButton.addEventListener("click", () => {
 
 const employees = await getEmployees();
 
-renderEmployees(employees);
-
 renderLetterFilter(
   (selectedLetter) => {
     const filteredEmployees = employees.filter((employee) => {
-      return employee.name.startsWith(selectedLetter);
+      return employee.name.toUpperCase().startsWith(selectedLetter);
     });
 
     renderEmployees(filteredEmployees);
@@ -31,3 +29,5 @@ renderLetterFilter(
     renderEmployees(employees);
   }
 );
+
+renderEmployees(employees);
