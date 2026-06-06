@@ -11,6 +11,7 @@ export function renderEmployees(employees) {
 
   employees.forEach((employee) => {
     const employeeCard = document.createElement("article");
+    employeeCard.classList.add("employee-card");
 
     employeeCard.innerHTML = `
       <img
