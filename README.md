@@ -1,3 +1,4 @@
+
 ## Descripción del proyecto
 
 Employee Dashboard es una aplicación web desarrollada con HTML, CSS y JavaScript Vanilla que permite a un usuario administrador acceder a un panel de gestión de empleados.
