@@ -1,92 +1,190 @@
-# Employee Dashboard
-
 ## Descripción del proyecto
-Aplicación web de tipo dashboard administrativo para la gestión de empleados.
-Permite:
-- Inicio de sesión mediante email y contraseña.
-- Visualización de empleados obtenidos desde una API externa.
-- Filtrado por la primera letra del nombre.
-- Gestión de sesión mediante localStorage.
-- Diseño responsive para dispositivos móviles y escritorio.
+
+Employee Dashboard es una aplicación web desarrollada con HTML, CSS y JavaScript Vanilla que permite a un usuario administrador acceder a un panel de gestión de empleados.
+
+La aplicación consume datos desde una API externa, permite visualizar información básica de los empleados, filtrar el listado por la inicial del nombre y gestionar la sesión mediante localStorage.
+
+Además, cuenta con diseño responsive para dispositivos móviles y de escritorio, así como pruebas unitarias desarrolladas con Vitest.
+
 ## Tecnologías utilizadas
+
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
+- Fetch API
+- LocalStorage
 - Vitest
 - Git
 - GitHub
 - Jira
-- Figma
+- Figma / Stitch
+
 ## Prototipo
 
-### Login - Desktop
-![Login Desktop](./docs/login-desktop.png)
-### Login - Mobile
-![Login Mobile](./docs/login-mobile.png)
-### Dashboard - Desktop
-![Dashboard Desktop](./docs/dashboard-desktop.png)
-### Dashboard - Mobile
-![Dashboard Mobile](./docs/dashboard-mobile.png)
+### Login Desktop
 
-https://www.figma.com/design/LfKudAy62qcyus8s5poCpy/employee-dashboard?node-id=0-1&p=f&t=u8HhDRiGoBk1PkMy-0
-## User Flow
+![Login Desktop](src/assets/docs/login-desktop.png)
 
-Pendiente.
+### Login Mobile
 
----
+![Login Mobile](src/assets/docs/login-mobile.png)
 
-## Instalación
+### Dashboard Desktop
 
-```bash
-git clone https://github.com/gmp395/employee-dashboard.git
+![Dashboard Desktop](src/assets/docs/dashboard-desktop.png)
 
-cd employee-dashboard
+### Dashboard Mobile
 
-npm install
+![Dashboard Mobile](src/assets/docs/dashboard-mobile.png)
 
-npm test
-```
+## Aplicación final
 
----
+### Login Desktop
 
-## Historias de usuario
+![Login Final Desktop](src/assets/docs/app-login-desktop.png)
 
-### Acceso al dashboard
+### Login Mobile
 
-Como usuario administrador quiero acceder mediante email y contraseña para poder gestionar la información de los empleados.
+![Login Final Mobile](src/assets/docs/app-login-mobile.png)
 
-### Listado de empleados
+### Dashboard Desktop
 
-Como usuario autenticado quiero visualizar el listado de empleados para consultar sus datos.
+![Dashboard Final Desktop](src/assets/docs/app-dashboard-desktop.png)
 
-### Filtrado por nombre
+### Dashboard Mobile
 
-Como usuario autenticado quiero filtrar empleados por la primera letra del nombre para encontrarlos más rápidamente.
+![Dashboard Final Mobile](src/assets/docs/app-dashboard-mobile.png)
 
-### Logout
+## Flujo de usuario
 
-Como usuario autenticado quiero cerrar sesión para impedir el acceso a terceros.
-
----
+1. El usuario accede a la página de login.
+2. Introduce sus credenciales.
+3. Se validan email y contraseña.
+4. Si son correctos, se almacena la sesión en localStorage.
+5. El usuario accede al dashboard.
+6. Se cargan los empleados desde la API.
+7. Puede filtrar empleados por inicial.
+8. Puede cerrar sesión mediante el botón Logout.
 
 ## Criterios de aceptación
 
-Pendiente.
+- Acceso mediante email y contraseña.
+- Validación de formato de email.
+- Validación de contraseña con mínimo 8 caracteres y un número.
+- Gestión de sesión mediante localStorage.
+- Consumo de API externa.
+- Visualización de empleados.
+- Filtrado por inicial.
+- Logout funcional.
+- Diseño responsive.
+- Testing unitario con Vitest.
+## Estructura del proyecto
 
----
+```text
+src/
+├── assets/
+│   └── docs/
+├── data/
+├── scripts/
+│   ├── api.js
+│   ├── auth.js
+│   ├── login.js
+│   ├── main.js
+│   ├── ui.js
+│   └── validators.js
+├── styles/
+│   ├── dashboard.css
+│   ├── login.css
+│   └── main.css
+├── dashboard.html
+└── index.html
 
-## Planificación
+tests/
+└── validators.test.js
+```
 
-Pendiente de añadir evidencias de Jira.
+## Instalación y ejecución
 
----
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/gmp395/employee-dashboard.git
+```
+
+### Acceder a la carpeta del proyecto
+
+```bash
+cd employee-dashboard
+```
+
+### Instalar dependencias
+
+```bash
+npm install
+```
+
+### Ejecutar los tests
+
+```bash
+npm test
+```
+
+### Ejecutar la aplicación
+
+Para visualizar la aplicación en local, se puede abrir el archivo `src/index.html` mediante la extensión **Live Server** de Visual Studio Code.
+
+## Credenciales de prueba
+
+```text
+Email: admin@paneladmin.com
+Contraseña: Admin123
+```
 
 ## Testing
 
-Se utilizará Vitest para las pruebas unitarias.
+Se han desarrollado pruebas unitarias con Vitest para comprobar el correcto funcionamiento de las funciones de validación del formulario de login.
 
----
+Las pruebas verifican:
 
-## Autor
+- Validación de correos electrónicos correctos.
+- Rechazo de correos electrónicos inválidos.
+- Validación de contraseñas con mínimo 8 caracteres y al menos un número.
+- Rechazo de contraseñas que no cumplen los requisitos.
+
+### Resultado de las pruebas
+
+![Vitest Tests](src/assets/docs/vitest-test.png)
+
+## Planificación del proyecto
+
+La planificación y seguimiento del proyecto se ha realizado con Jira, organizando el trabajo mediante un epic principal, historias de usuario y estados de avance.
+
+### Historias de usuario y seguimiento
+
+![Jira Backlog](src/assets/docs/jira-backlog.png)
+
+## Control de versiones
+
+El proyecto se ha desarrollado utilizando Git y GitHub, siguiendo una convención de commits basada en Conventional Commits.
+
+Ejemplos de commits utilizados:
+
+```text
+feat: finish login page
+feat: complete dashboard functionality
+style: add responsive dashboard styles
+test: add validator unit tests
+fix: improve employee loading error handling
+```
+
+## Despliegue
+
+La aplicación está preparada para ser desplegada mediante GitHub Pages.
+
+**Enlace al despliegue:**
+
+Pendiente de añadir.
+
+## Autora
 
 Gema Miguel
