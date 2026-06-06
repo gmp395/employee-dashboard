@@ -4,3 +4,4 @@ coverage/
 .env
 .DS_Store
 .vscode/
+src/data/db.local.js
