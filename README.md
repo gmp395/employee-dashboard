@@ -24,37 +24,37 @@ Además, cuenta con diseño responsive para dispositivos móviles y de escritori
 
 ### Login Desktop
 
-![Login Desktop](src/assets/docs/login-desktop.png)
+![Login Desktop](assets/docs/login-desktop.png)
 
 ### Login Mobile
 
-![Login Mobile](src/assets/docs/login-mobile.png)
+![Login Mobile](assets/docs/login-mobile.png)
 
 ### Dashboard Desktop
 
-![Dashboard Desktop](src/assets/docs/dashboard-desktop.png)
+![Dashboard Desktop](assets/docs/dashboard-desktop.png)
 
 ### Dashboard Mobile
 
-![Dashboard Mobile](src/assets/docs/dashboard-mobile.png)
+![Dashboard Mobile](assets/docs/dashboard-mobile.png)
 
 ## Aplicación final
 
 ### Login Desktop
 
-![Login Final Desktop](src/assets/docs/app-login-desktop.png)
+![Login Final Desktop](assets/docs/app-login-desktop.png)
 
 ### Login Mobile
 
-![Login Final Mobile](src/assets/docs/app-login-mobile.png)
+![Login Final Mobile](assets/docs/app-login-mobile.png)
 
 ### Dashboard Desktop
 
-![Dashboard Final Desktop](src/assets/docs/app-dashboard-desktop.png)
+![Dashboard Final Desktop](assets/docs/app-dashboard-desktop.png)
 
 ### Dashboard Mobile
 
-![Dashboard Final Mobile](src/assets/docs/app-dashboard-mobile.png)
+![Dashboard Final Mobile](assets/docs/app-dashboard-mobile.png)
 
 ## Flujo de usuario
 
@@ -82,7 +82,6 @@ Además, cuenta con diseño responsive para dispositivos móviles y de escritori
 ## Estructura del proyecto
 
 ```text
-src/
 ├── assets/
 │   └── docs/
 ├── data/
@@ -154,7 +153,7 @@ Las pruebas verifican:
 
 ### Resultado de las pruebas
 
-![Vitest Tests](src/assets/docs/vitest-test.png)
+![Vitest Tests](assets/docs/vitest-test.png)
 
 ## Planificación del proyecto
 
@@ -162,7 +161,7 @@ La planificación y seguimiento del proyecto se ha realizado con Jira, organizan
 
 ### Historias de usuario y seguimiento
 
-![Jira Backlog](src/assets/docs/jira-backlog.png)
+![Jira Backlog](assets/docs/jira-backlog.png)
 
 ## Control de versiones
 
