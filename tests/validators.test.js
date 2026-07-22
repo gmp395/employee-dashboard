@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { isValidEmail, isValidPassword } from "../src/scripts/validators.js";
+import { isValidEmail, isValidPassword } from "../scripts/validators.js";
 
 describe("Validaciones del formulario de login", () => {
   test("valida un email correcto", () => {
