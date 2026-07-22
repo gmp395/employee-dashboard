@@ -5,8 +5,7 @@ coverage/
 .env
 .DS_Store
 .vscode/
-src/data/db.local.js
-=======
+data/db.local.js
 # Logs
 logs
 *.log
