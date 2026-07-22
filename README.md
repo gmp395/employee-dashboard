@@ -1,4 +1,3 @@
-
 ## Descripción del proyecto
 
 Employee Dashboard es una aplicación web desarrollada con HTML, CSS y JavaScript Vanilla que permite a un usuario administrador acceder a un panel de gestión de empleados.
@@ -24,37 +23,37 @@ Además, cuenta con diseño responsive para dispositivos móviles y de escritori
 
 ### Login Desktop
 
-![Login Desktop](assets/docs/login-desktop.png)
+<img src="assets/docs/login-desktop.png" alt="Login Desktop" width="500">
 
 ### Login Mobile
 
-![Login Mobile](assets/docs/login-mobile.png)
+<img src="assets/docs/login-mobile.png" alt="Login Mobile" width="250">
 
 ### Dashboard Desktop
 
-![Dashboard Desktop](assets/docs/dashboard-desktop.png)
+<img src="assets/docs/dashboard-desktop.png" alt="Dashboard Desktop" width="500">
 
 ### Dashboard Mobile
 
-![Dashboard Mobile](assets/docs/dashboard-mobile.png)
+<img src="assets/docs/dashboard-mobile.png" alt="Dashboard Mobile" width="250">
 
 ## Aplicación final
 
 ### Login Desktop
 
-![Login Final Desktop](assets/docs/app-login-desktop.png)
+<img src="assets/docs/app-login-desktop.png" alt="Login Final Desktop" width="500">
 
 ### Login Mobile
 
-![Login Final Mobile](assets/docs/app-login-mobile.png)
+<img src="assets/docs/app-login-mobile.png" alt="Login Final Mobile" width="250">
 
 ### Dashboard Desktop
 
-![Dashboard Final Desktop](assets/docs/app-dashboard-desktop.png)
+<img src="assets/docs/app-dashboard-desktop.png" alt="Dashboard Final Desktop" width="500">
 
 ### Dashboard Mobile
 
-![Dashboard Final Mobile](assets/docs/app-dashboard-mobile.png)
+<img src="assets/docs/app-dashboard-mobile.png" alt="Dashboard Final Mobile" width="250">
 
 ## Flujo de usuario
 
@@ -79,6 +78,7 @@ Además, cuenta con diseño responsive para dispositivos móviles y de escritori
 - Logout funcional.
 - Diseño responsive.
 - Testing unitario con Vitest.
+
 ## Estructura del proyecto
 
 ```text
@@ -131,14 +131,7 @@ npm test
 
 ### Ejecutar la aplicación
 
-Para visualizar la aplicación en local, se puede abrir el archivo `src/index.html` mediante la extensión **Live Server** de Visual Studio Code.
-
-## Credenciales de prueba
-
-```text
-Email: admin@paneladmin.com
-Contraseña: Admin123
-```
+Para visualizar la aplicación en local, se puede abrir el archivo `index.html` mediante la extensión **Live Server** de Visual Studio Code.
 
 ## Testing
 
@@ -153,7 +146,7 @@ Las pruebas verifican:
 
 ### Resultado de las pruebas
 
-![Vitest Tests](assets/docs/vitest-test.png)
+<img src="assets/docs/vitest-test.png" alt="Vitest Tests" width="500">
 
 ## Planificación del proyecto
 
@@ -161,7 +154,7 @@ La planificación y seguimiento del proyecto se ha realizado con Jira, organizan
 
 ### Historias de usuario y seguimiento
 
-![Jira Backlog](assets/docs/jira-backlog.png)
+<img src="assets/docs/jira-backlog.png" alt="Jira Backlog" width="600">
 
 ## Control de versiones
 
@@ -184,13 +177,11 @@ Para acceder a la aplicación desplegada, usa:
 - **Email:** `tu@email.com`
 - **Contraseña:** `tucontraseña1`
 
-
 ## Despliegue
 
 La aplicación está desplegada en GitHub Pages.
 
 [Ver aplicación](https://gmp395.github.io/employee-dashboard/)
-
 
 ## Autora
 
