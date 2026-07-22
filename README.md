@@ -177,6 +177,14 @@ test: add validator unit tests
 fix: improve employee loading error handling
 ```
 
+## Credenciales de prueba
+
+Para acceder a la aplicación desplegada, usa:
+
+- **Email:** `tu@email.com`
+- **Contraseña:** `tucontraseña1`
+
+
 ## Despliegue
 
 La aplicación está desplegada en GitHub Pages.
