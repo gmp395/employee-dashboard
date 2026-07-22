@@ -41,10 +41,18 @@ export function renderLetterFilter(onLetterClick, onShowAllClick) {
 
   letterFilter.innerHTML = "";
 
+  function setActiveButton(clickedButton) {
+    const allButtons = letterFilter.querySelectorAll("button");
+    allButtons.forEach((btn) => btn.classList.remove("active"));
+    clickedButton.classList.add("active");
+  }
+
   const allButton = document.createElement("button");
   allButton.textContent = "Todos";
+  allButton.classList.add("active");
 
   allButton.addEventListener("click", () => {
+    setActiveButton(allButton);
     onShowAllClick();
   });
 
@@ -58,6 +66,7 @@ export function renderLetterFilter(onLetterClick, onShowAllClick) {
     button.textContent = letter;
 
     button.addEventListener("click", () => {
+      setActiveButton(button);
       onLetterClick(letter);
     });
 
