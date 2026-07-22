@@ -1,8 +1,6 @@
 import { users } from "../data/db.local.js";
 import { isValidPassword } from "./validators.js";
 
-console.log("login.js cargado");
-
 const passwordInput = document.querySelector("#password");
 const togglePasswordButton = document.querySelector("#toggle-password");
 const loginForm = document.querySelector("#login-form");
@@ -20,6 +18,7 @@ loginForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   loginError.textContent = "";
+  loginError.classList.remove("error");
 
   const email = emailInput.value;
   const password = passwordInput.value;
@@ -27,6 +26,7 @@ loginForm.addEventListener("submit", (event) => {
   if (!isValidPassword(password)) {
     loginError.textContent =
       "La contraseña debe tener al menos 8 caracteres y contener al menos un número.";
+    loginError.classList.add("error");
     return;
   }
 
@@ -39,5 +39,6 @@ loginForm.addEventListener("submit", (event) => {
     window.location.href = "./dashboard.html";
   } else {
     loginError.textContent = "Email o contraseña incorrectos.";
+    loginError.classList.add("error");
   }
 });
