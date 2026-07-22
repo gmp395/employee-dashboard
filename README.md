@@ -181,8 +181,9 @@ fix: improve employee loading error handling
 
 La aplicación está desplegada en GitHub Pages.
 
-[Ver aplicación](https://gmp395.github.io/employee-dashboard/src/)
+[Ver aplicación](https://gmp395.github.io/employee-dashboard/)
+
 
 ## Autora
 
-Gema Miguel
+Gema — [github.com/gmp395](https://github.com/gmp395)
