@@ -73,3 +73,7 @@ button:hover {
   color: #dc2626;
   font-weight: bold;
 }
+
+header h1 {
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
